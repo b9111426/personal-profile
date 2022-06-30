@@ -1,0 +1,12 @@
+//css rest
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+//變數
+$container-width: 1200px;
+$skillBorder-width: (
+  $container-width)*0.83;

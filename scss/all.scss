@@ -1,0 +1,237 @@
+@import "./base";
+@import "./mixin";
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  font-family: SF Pro Text, Microsoft JhengHei;
+
+  @include w-414 {
+    font-size: 11px;
+  }
+}
+
+.container {
+  width: $container-width;
+  padding-top: 40px;
+
+
+  @include w-1300 {
+    width: ($container-width)*0.7;
+  }
+
+  @include w-1000 {
+    width: ($container-width)*0.6;
+  }
+
+  @include w-768 {
+    width: ($container-width)*0.5;
+  }
+
+  @include w-414 {
+    width: ($container-width)*0.25;
+    padding: 0 0.5rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+    line-height: 6rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #000;
+  }
+
+  .photo {
+    max-width: 100%;
+    padding: 48px 0;
+  }
+
+  .box {
+    padding-bottom: 4.5rem;
+
+    @include w-1300 {
+      adding-bottom: 4rem;
+    }
+
+    @include w-768 {
+      wadding-bottom: 3rem;
+    }
+
+    @include w-414 {
+      wadding-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      line-height: 3rem;
+      display: flex;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #000;
+
+      span {
+        color: #A00404;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding-left: 2rem;
+        align-self: center;
+      }
+    }
+
+    li {
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+
+      @include w-414 {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+
+  .skillInfo {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4.5rem;
+
+    h2 {
+      width: $skillBorder-width;
+      text-align: center;
+      font-size: 2rem;
+      line-height: 3rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #fff;
+
+      @include w-1300 {
+        width: ($skillBorder-width)*0.7;
+      }
+
+      @include w-1000 {
+        width: ($skillBorder-width)*0.6;
+      }
+
+      @include w-768 {
+        width: ($skillBorder-width)*0.5;
+      }
+
+      @include w-414 {
+        width: ($skillBorder-width)*0.25;
+      }
+
+      span {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        align-self: center;
+        margin-left: 1rem;
+      }
+    }
+
+
+    .skillList {
+      margin-top: 2.5rem;
+      justify-content: center;
+      border-left: 1px solid #96A9C4;
+      margin-bottom: 3rem;
+
+      li {
+        text-align: left;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-left: 1.5rem;
+        margin-bottom: 1.25rem;
+
+      }
+    }
+  }
+}
+
+.darkBlue {
+  background-color: #415165;
+  color: #fff;
+  padding-top: 1.5rem;
+}
+
+.footer {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h2 {
+    margin-bottom: 2rem;
+    width: $container-width;
+    font-size: 2rem;
+    line-height: 3rem;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    padding-bottom: 0.5rem;
+
+    @include w-1300 {
+      width: ($container-width)*0.7;
+    }
+
+    @include w-1000 {
+      width: ($container-width)*0.6;
+    }
+
+    @include w-768 {
+      width: ($container-width)*0.5;
+    }
+
+    @include w-414 {
+      width: ($container-width)*0.25;
+    }
+
+
+    span {
+      align-self: center;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-left: 1rem;
+    }
+  }
+
+  ul {
+    text-align: center;
+
+    li {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-bottom: 1rem;
+
+      @include w-414 {
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+      }
+
+      &:nth-child(4) {
+        margin-bottom: 1.25rem;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+
+          &:hover {
+            color: #ccc;
+          }
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 3rem;
+        font-size: 0;
+
+        img {
+          margin: 0 12px;
+
+          &:hover {
+            filter: brightness(0.8);
+          }
+        }
+      }
+    }
+  }
+}

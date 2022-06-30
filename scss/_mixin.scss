@@ -1,0 +1,23 @@
+@mixin w-1300 {
+  @media(max-width:1300px) {
+    @content;
+  }
+}
+
+@mixin w-1000 {
+  @media(max-width:1000px) {
+    @content;
+  }
+}
+
+@mixin w-768 {
+  @media(max-width:768px) {
+    @content;
+  }
+}
+
+@mixin w-414 {
+  @media(max-width:414px) {
+    @content;
+  }
+}
