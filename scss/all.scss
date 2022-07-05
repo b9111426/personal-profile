@@ -1,13 +1,11 @@
+@import "./reset";
 @import "./base";
 @import "./mixin";
 
-html,
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow-x: hidden;
-  font-family: SF Pro Text, Microsoft JhengHei;
+
+body,html {
+  line-height: 1.5;
+  font-family:'PingFang TC', 'SF Pro Text', 'Microsoft JhengHei', sans-serif;
 
   @include w-414 {
     font-size: 11px;
@@ -17,7 +15,7 @@ body {
 .container {
   width: $container-width;
   padding-top: 40px;
-
+  margin: 0 auto;
 
   @include w-1300 {
     width: ($container-width)*0.7;
@@ -82,6 +80,7 @@ body {
     li {
       font-size: 1.5rem;
       line-height: 2.25rem;
+      padding-bottom: 2rem;
 
       @include w-414 {
         padding-bottom: 1rem;
@@ -97,28 +96,13 @@ body {
     margin-bottom: 4.5rem;
 
     h2 {
-      width: $skillBorder-width;
+      width: 83%;
       text-align: center;
       font-size: 2rem;
       line-height: 3rem;
       padding-bottom: 0.5rem;
       border-bottom: 1px solid #fff;
 
-      @include w-1300 {
-        width: ($skillBorder-width)*0.7;
-      }
-
-      @include w-1000 {
-        width: ($skillBorder-width)*0.6;
-      }
-
-      @include w-768 {
-        width: ($skillBorder-width)*0.5;
-      }
-
-      @include w-414 {
-        width: ($skillBorder-width)*0.25;
-      }
 
       span {
         font-size: 1.5rem;
@@ -146,15 +130,22 @@ body {
     }
   }
 }
+.hexLogo{
+  width:90px;
+  height:67px;
+}
+.simtreeLogo{
+  width:72px ;
+  height: 72px;
+}
 
 .darkBlue {
   background-color: #415165;
   color: #fff;
-  padding-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .footer {
-  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,29 +153,12 @@ body {
 
   h2 {
     margin-bottom: 2rem;
-    width: $container-width;
+    width:83%;
     font-size: 2rem;
     line-height: 3rem;
     border-bottom: 1px solid #fff;
     text-align: center;
-    padding-bottom: 0.5rem;
-
-    @include w-1300 {
-      width: ($container-width)*0.7;
-    }
-
-    @include w-1000 {
-      width: ($container-width)*0.6;
-    }
-
-    @include w-768 {
-      width: ($container-width)*0.5;
-    }
-
-    @include w-414 {
-      width: ($container-width)*0.25;
-    }
-
+    margin-bottom: 0.5rem;
 
     span {
       align-self: center;
@@ -233,5 +207,10 @@ body {
         }
       }
     }
+  }
+
+  .footerIcon{
+    width: 48px;
+    height: 48px;
   }
 }

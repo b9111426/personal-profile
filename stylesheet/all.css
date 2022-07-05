@@ -1,30 +1,60 @@
-* {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
-  list-style: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-html,
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow-x: hidden;
-  font-family: SF Pro Text, Microsoft JhengHei;
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, html {
+  line-height: 1.5;
+  font-family: 'PingFang TC', 'SF Pro Text', 'Microsoft JhengHei', sans-serif;
 }
 
 @media (max-width: 414px) {
-  html,
-  body {
+  body, html {
     font-size: 11px;
   }
 }
@@ -32,6 +62,7 @@ body {
 .container {
   width: 1200px;
   padding-top: 40px;
+  margin: 0 auto;
 }
 
 @media (max-width: 1300px) {
@@ -116,6 +147,7 @@ body {
 .container .box li {
   font-size: 1.5rem;
   line-height: 2.25rem;
+  padding-bottom: 2rem;
 }
 
 @media (max-width: 414px) {
@@ -140,36 +172,12 @@ body {
 }
 
 .container .skillInfo h2 {
-  width: 996px;
+  width: 83%;
   text-align: center;
   font-size: 2rem;
   line-height: 3rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #fff;
-}
-
-@media (max-width: 1300px) {
-  .container .skillInfo h2 {
-    width: 697.2px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .container .skillInfo h2 {
-    width: 597.6px;
-  }
-}
-
-@media (max-width: 768px) {
-  .container .skillInfo h2 {
-    width: 498px;
-  }
-}
-
-@media (max-width: 414px) {
-  .container .skillInfo h2 {
-    width: 249px;
-  }
 }
 
 .container .skillInfo h2 span {
@@ -198,14 +206,23 @@ body {
   margin-bottom: 1.25rem;
 }
 
+.hexLogo {
+  width: 90px;
+  height: 67px;
+}
+
+.simtreeLogo {
+  width: 72px;
+  height: 72px;
+}
+
 .darkBlue {
   background-color: #415165;
   color: #fff;
-  padding-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .footer {
-  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,36 +240,12 @@ body {
 
 .footer h2 {
   margin-bottom: 2rem;
-  width: 1200px;
+  width: 83%;
   font-size: 2rem;
   line-height: 3rem;
   border-bottom: 1px solid #fff;
   text-align: center;
-  padding-bottom: 0.5rem;
-}
-
-@media (max-width: 1300px) {
-  .footer h2 {
-    width: 840px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .footer h2 {
-    width: 720px;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer h2 {
-    width: 600px;
-  }
-}
-
-@media (max-width: 414px) {
-  .footer h2 {
-    width: 300px;
-  }
+  margin-bottom: 0.5rem;
 }
 
 .footer h2 span {
@@ -306,5 +299,10 @@ body {
 .footer ul li:last-child img:hover {
   -webkit-filter: brightness(0.8);
           filter: brightness(0.8);
+}
+
+.footer .footerIcon {
+  width: 48px;
+  height: 48px;
 }
 /*# sourceMappingURL=all.css.map */
