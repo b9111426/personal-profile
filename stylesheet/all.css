@@ -49,8 +49,11 @@ table {
 }
 
 body, html {
-  line-height: 1.5;
-  font-family: 'PingFang TC', 'SF Pro Text', 'Microsoft JhengHei', sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft JhengHei",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+body img, html img {
+  vertical-align: bottom;
 }
 
 @media (max-width: 414px) {
@@ -86,59 +89,61 @@ body, html {
 @media (max-width: 414px) {
   .container {
     width: 300px;
-    padding: 0 0.5rem;
+    padding: 0 8px;
   }
 }
 
 .container h1 {
   font-size: 5rem;
-  line-height: 6rem;
-  padding-bottom: 2rem;
+  line-height: 95px;
+  padding-bottom: 22px;
   border-bottom: 2px solid #000;
 }
 
 .container .photo {
-  max-width: 100%;
-  padding: 48px 0;
+  max-width: 324px;
+  margin: 48px 0;
 }
 
 .container .box {
-  padding-bottom: 4.5rem;
+  margin-bottom: 64px;
 }
 
 @media (max-width: 1300px) {
   .container .box {
-    adding-bottom: 4rem;
+    margin-bottom: 57.6px;
   }
 }
 
 @media (max-width: 768px) {
   .container .box {
-    wadding-bottom: 3rem;
+    margin-bottom: 48px;
   }
 }
 
 @media (max-width: 414px) {
   .container .box {
-    wadding-bottom: 1rem;
+    margin-bottom: 16px;
   }
 }
 
 .container .box h2 {
   font-size: 2rem;
   line-height: 3rem;
+  font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 0.5rem;
+  padding-bottom: 7px;
+  margin-bottom: 16px;
   border-bottom: 1px solid #000;
 }
 
 .container .box h2 span {
   color: #A00404;
   font-size: 1.5rem;
-  line-height: 2rem;
-  padding-left: 2rem;
+  line-height: 2.25rem;
+  padding-left: 16px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -147,17 +152,32 @@ body, html {
 .container .box li {
   font-size: 1.5rem;
   line-height: 2.25rem;
-  padding-bottom: 2rem;
+  margin-bottom: 24px;
 }
 
 @media (max-width: 414px) {
   .container .box li {
-    padding-bottom: 1rem;
+    margin-bottom: 16px;
   }
 }
 
+.container .box .educList li {
+  margin-bottom: 16px;
+}
+
+.container .box .workEx .workaExItem {
+  font-weight: bold;
+  line-height: 2.25rem;
+  font-size: 1.5rem;
+}
+
+.container .box .workEx li {
+  line-height: 1.875rem;
+  font-size: 1.25rem;
+}
+
 .container .skillInfo {
-  padding: 1.5rem;
+  padding-top: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,50 +196,53 @@ body, html {
   text-align: center;
   font-size: 2rem;
   line-height: 3rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 7px;
   border-bottom: 1px solid #fff;
 }
 
 .container .skillInfo h2 span {
   font-size: 1.5rem;
-  line-height: 2rem;
+  line-height: 2.25rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-left: 1rem;
+  margin-left: 16px;
 }
 
 .container .skillInfo .skillList {
-  margin-top: 2.5rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   border-left: 1px solid #96A9C4;
-  margin-bottom: 3rem;
+  margin: 40px 0;
 }
 
 .container .skillInfo .skillList li {
   text-align: left;
   font-size: 1.5rem;
-  line-height: 2rem;
-  margin-left: 1.5rem;
-  margin-bottom: 1.25rem;
+  line-height: 2.25rem;
+  margin-left: 23px;
+  margin-bottom: 8px;
 }
 
 .hexLogo {
-  width: 90px;
-  height: 67px;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .simtreeLogo {
-  width: 72px;
-  height: 72px;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .darkBlue {
   background-color: #415165;
   color: #fff;
-  margin-top: 1.5rem;
+  margin-top: 24px;
 }
 
 .footer {
@@ -236,16 +259,17 @@ body, html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 24px;
 }
 
 .footer h2 {
-  margin-bottom: 2rem;
   width: 83%;
   font-size: 2rem;
   line-height: 3rem;
   border-bottom: 1px solid #fff;
   text-align: center;
-  margin-bottom: 0.5rem;
+  padding-bottom: 7px;
+  margin-bottom: 24px;
 }
 
 .footer h2 span {
@@ -253,8 +277,8 @@ body, html {
       -ms-grid-row-align: center;
       align-self: center;
   font-size: 1.5rem;
-  line-height: 2rem;
-  margin-left: 1rem;
+  line-height: 2.25rem;
+  margin-left: 16px;
 }
 
 .footer ul {
@@ -263,8 +287,8 @@ body, html {
 
 .footer ul li {
   font-size: 1.5rem;
-  line-height: 2rem;
-  margin-bottom: 1rem;
+  line-height: 2.25rem;
+  margin-bottom: 16px;
 }
 
 @media (max-width: 414px) {
@@ -275,7 +299,7 @@ body, html {
 }
 
 .footer ul li:nth-child(4) {
-  margin-bottom: 1.25rem;
+  margin-bottom: 16px;
 }
 
 .footer ul li:nth-child(4) a {
@@ -288,8 +312,9 @@ body, html {
 }
 
 .footer ul li:last-child {
-  margin-bottom: 3rem;
   font-size: 0;
+  line-height: 0px;
+  margin-bottom: 40px;
 }
 
 .footer ul li:last-child img {
