@@ -1,3 +1,231 @@
-//變數
-$container-width: 1200px;
-$boxMargin-bottom: 64px;
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft JhengHei",Roboto,"Helvetica Neue",Arial,sans-serif;
+
+  @include w-414 {
+    font-size: 11px;
+  }
+}
+
+img{
+  vertical-align: bottom;
+  }
+
+.title {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: bold;
+  display: flex;
+  padding-bottom: 7px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #000;
+  .subtitle {
+    color: #A00404;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    padding-left: 16px;
+    align-self: center;
+  }
+}
+
+.container {
+  width: $container-width;
+  padding-top: 40px;
+  margin: 0 auto;
+
+  @include w-1300 {
+    width: ($container-width)*0.7;
+  }
+
+  @include w-1000 {
+    width: ($container-width)*0.6;
+  }
+
+  @include w-768 {
+    width: ($container-width)*0.5;
+  }
+
+  @include w-414 {
+    width: ($container-width)*0.25;
+    padding: 0 8px;
+  }
+
+  h1 {
+    font-size: 5rem;
+    line-height: 95px;
+    padding-bottom: 22px;
+    border-bottom: 2px solid #000;
+  }
+
+  .photo {
+    margin: 48px 0;
+  }
+
+  .box {
+    margin-bottom: $boxMargin;
+
+    @include w-1300 {
+      margin-bottom: ($boxMargin)*0.9;
+    }
+
+    @include w-768 {
+      margin-bottom: ($boxMargin)*0.75;
+    }
+
+    @include w-414 {
+      margin-bottom: ($boxMargin)*0.25;
+    }
+
+
+    li {
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+      margin-bottom: 24px;
+      @include w-414 {
+        margin-bottom: 16px;
+      }
+    }
+    .educList{
+      li{
+        margin-bottom: 16px;
+      }
+    }
+
+    .workEx{
+      .workExItem{
+        font-weight: bold;
+        line-height: 2.25rem;
+        font-size: 1.5rem;
+      }
+      li{
+        line-height: 1.875rem;
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+
+
+.skill {
+  padding-top: 24px ;
+  padding-bottom: 40px;
+  margin-bottom: 4.5rem;
+
+  &-title {
+    margin: 0 auto;
+    width: 996px;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #fff;
+  }
+
+  &-subtitle {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin-left: 16px;
+  }
+
+  &-list {
+    border-left: 1px solid #96A9C4;
+    width: 200px;
+    padding-left: 23px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  &-item {
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin-bottom: 8px;
+  }
+}
+
+.hexLogo{
+  width:100px;
+  height:100px;
+  object-fit: contain;
+}
+.simtreeLogo{
+  width:100px ;
+  height: 100px;
+  object-fit: contain;
+}
+
+.darkBlue {
+  background-color: #415165;
+  color: #fff;
+  margin-top: 24px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 24px;
+
+  h2 {
+    width:83%;
+    font-size: 2rem;
+    line-height: 3rem;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    padding-bottom: 7px;
+    margin-bottom: 24px;
+
+    span {
+      align-self: center;
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+      margin-left: 16px;
+    }
+  }
+
+  ul {
+    text-align: center;
+
+    li {
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+      margin-bottom: 16px;
+
+      @include w-414 {
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+      }
+
+      &:nth-child(4) {
+        margin-bottom: 16px;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+
+          &:hover {
+            color: #ccc;
+          }
+        }
+      }
+
+      &:last-child {
+        font-size: 0;
+        line-height: 0px;
+        margin-bottom: 40px;
+        img {
+          margin: 0 12px;
+          &:hover {
+            filter: brightness(0.8);
+          }
+        }
+      }
+    }
+  }
+
+  .footerIcon{
+    width: 48px;
+    height: 48px;
+  }
+}
