@@ -50,6 +50,8 @@ table {
 
 body {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft JhengHei",Roboto,"Helvetica Neue",Arial,sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media (max-width: 414px) {
@@ -174,24 +176,30 @@ img {
 }
 
 .workEx-list {
+  margin-left: 20px;
+  padding-left: 24px;
+  border-left: 1px solid #96A9C4;
+}
+
+.workEx-list > li {
   margin-bottom: 24px;
 }
 
 .workEx-item {
   line-height: 2.25rem;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .workEx-content {
   line-height: 1.875rem;
   font-size: 1.25rem;
-  color: red;
 }
 
 .skill-container {
   padding-top: 24px;
   padding-bottom: 40px;
-  margin-bottom: 4.5rem;
+  margin-bottom: 4rem;
 }
 
 .skill-title {
@@ -213,7 +221,7 @@ img {
 .skill-list {
   border-left: 1px solid #96A9C4;
   width: 200px;
-  padding-left: 23px;
+  padding-left: 22px;
   margin: 0 auto;
   margin-top: 40px;
 }
@@ -223,6 +231,10 @@ img {
   font-size: 1.5rem;
   line-height: 2.25rem;
   margin-bottom: 8px;
+}
+
+.skill-item:last-child {
+  margin-bottom: 0;
 }
 
 .hexLogo {
