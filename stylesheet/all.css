@@ -62,6 +62,10 @@ img {
   vertical-align: bottom;
 }
 
+.mx-auto {
+  margin: 0 auto;
+}
+
 .title {
   font-size: 2rem;
   line-height: 3rem;
@@ -87,7 +91,6 @@ img {
 .container {
   width: 1200px;
   padding-top: 40px;
-  margin: 0 auto;
 }
 
 @media (max-width: 1300px) {
@@ -115,7 +118,7 @@ img {
   }
 }
 
-.container h1 {
+.container > h1 {
   font-size: 5rem;
   line-height: 95px;
   padding-bottom: 22px;
@@ -164,18 +167,28 @@ img {
   margin-bottom: 16px;
 }
 
-.container .box .workEx .workExItem {
-  font-weight: bold;
+.workEx-container {
+  margin-top: 64px;
+  margin-bottom: 80px;
+  width: 1200px;
+}
+
+.workEx-list {
+  margin-bottom: 24px;
+}
+
+.workEx-item {
   line-height: 2.25rem;
   font-size: 1.5rem;
 }
 
-.container .box .workEx li {
+.workEx-content {
   line-height: 1.875rem;
   font-size: 1.25rem;
+  color: red;
 }
 
-.skill {
+.skill-container {
   padding-top: 24px;
   padding-bottom: 40px;
   margin-bottom: 4.5rem;
